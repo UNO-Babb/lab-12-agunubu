@@ -16,7 +16,7 @@ def main():
   random.seed(2020) # This makes sure that the random list will be the same every time.
 
 
-  numberTerms = 10000
+  numberTerms = 100000
 
   orderedList = []
   reversedList = []
@@ -25,7 +25,7 @@ def main():
   for i in range(numberTerms):
     orderedList.append(i)
     reversedList.insert(0, i)
-    randomList.append(random.randint(1, 10000))
+    randomList.append(random.randint(1, 100000))
 
   # Run each of the sorts in different python sessions.
   # The sorts are bubbleSort, bubbleSortEarlyExit, selectionSort, insertionSort, and mergeSort

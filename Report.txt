@@ -1,44 +1,55 @@
-Name:
+Name: Aurora Gunubu
 
-Number of elements:
+Number of elements: 100,000
 
 Bubble Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 263.10892 seconds
+Reversed: 602.08811 seconds
+Random: 479.49774 seconds
 
 Bubble Sort Early Exit
-Sorted:
-Reversed:
-Random:
+Sorted: 0.00467 seconds
+Reversed: 617.38779 seconds
+Random: 515.04328 seconds
 
 Selection Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 196.29934 seconds
+Reversed: 203.77605 seconds
+Random: 225.15786 seconds
 
 Insertion Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.01524 seconds
+Reversed: 414.22897 seconds
+Random: 295.72870 seconds
 
 Merge Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.21081 seconds
+Reversed: 0.20310 seconds
+Random: 0.26505 seconds
 
 Questions to answer:
 1) What was the worst case scenario for any sorting technique?
 
+Reversed Bubble Sort Early Exit was the worst case scenario for all the sorting techniques. 
 
 2) The first 3 sorts have the same runtime of O(n^2). Why were the times different? Why would one be more efficient than the others?
 
+Even though they use the same O(n^2), they all operate differently than one another. For example: 
+Bubble sort swaps each number individually, while selection sort looks through the list but makes less swaps. Insertion sort works well, especially
+on sorted data because it only shifts elements, and doesnt make swaps.
 
 3) Why was merge sort so much more efficient?
+Merge sort is efficient because it splits a list in two, sorts them separately, and then merges them back together in the correct order.
+Not having to repeatedly check and swap variables saves a lot of time especially with larger datasets.
 
 
 4) The built-in sorting technique for most programming languages is known as TimSort.
 This is a merge sort until the arrays have fewer than 10 elements, then it does an insertion sort. Why would this be useful?
 
+Merge sort is good for large datasets, but not as effective for smaller ones. So by switching to insertion sort 
+when n < 10, it makes the process extremely efficient.
 
 5) What issues can you see with a recursive sorting technique like merge sort?
+
+It takes a lot of memory to use Merge sort because recursion is a function calling itself. If you do this
+repeatedly especially for large data sets, your computer may crash or run very slowly. 
